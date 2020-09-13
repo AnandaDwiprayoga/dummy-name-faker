@@ -11,4 +11,4 @@ small library that help you to get random name for your project
 
 ## Todo
 - [ ] Complete Readme
-- [ x ] Add license
+- [x] Add license
