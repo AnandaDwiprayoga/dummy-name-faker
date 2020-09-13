@@ -10,5 +10,5 @@ small library that help you to get random name for your project
 ## How to contribute
 
 ## Todo
-- [] Complete Readme
-- [x] Add license
+- [ ] Complete Readme
+- [ x ] Add license
