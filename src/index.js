@@ -1,7 +1,7 @@
-const random = require('./random');
-const all = require('./all');
+const random = require("./random");
+const all = require("./all");
 
 module.exports = {
-    random,
-    all
-}
+  random,
+  all
+};

@@ -1,7 +1,7 @@
-const names = require('./data/names.json');
+const names = require("./data/names.json");
 
 const all = () => {
-    return names;
-}
+  return names;
+};
 
-module.exports = all
+module.exports = all;
