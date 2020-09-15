@@ -1,7 +1,7 @@
 const all = require('./data/names.json');
 
 
-test('should matching result', () => {
+test('make sure all item in array is string', () => {
    const isAllDataString = all.every(val => {
        return typeof val === 'string';
    })
