@@ -8,7 +8,8 @@
     "lint:fix": "eslint ./src --fix",
     "format": "prettier ./src --write",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "author": "ananda dwi prayoga <prayogaananda04@gmail.com>",
   "license": "MIT",
@@ -18,6 +19,14 @@
     "prettier": "^2.1.1"
   },
   "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
     "testEnvironment": "node"
   }
 }
