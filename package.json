@@ -6,12 +6,17 @@
   "scripts": {
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
-    "format": "prettier ./src --write"
+    "format": "prettier ./src --write",
+    "test": "jest"
   },
   "author": "ananda dwi prayoga <prayogaananda04@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "eslint": "^7.9.0",
+    "jest-cli": "^26.4.2",
     "prettier": "^2.1.1"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
