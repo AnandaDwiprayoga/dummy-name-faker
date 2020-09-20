@@ -11,11 +11,11 @@ jobs :
         uses: actions/setup-node@v1
         with: 
           node-version: "12.x"
-      - name: npm install, test
+      - name: npm install, test, coverage
         run : |
           npm install
           npm test
-          npm codecov
+          npm run codecov
         env : 
           CI: true
           CODECOV_TOKEN: 13fae502-88d5-4d79-92f8-86676f7979ae
