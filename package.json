@@ -2,7 +2,7 @@
   "name": "open-source",
   "version": "1.0.0",
   "description": "learn contribute in open source",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
@@ -11,7 +11,8 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "prebuild": "rimraf dist",
-    "build": "babel src --out-dir dist --ignore src/**/*.test.js --copy-files --no-copy-ignored"
+    "build": "babel src --out-dir dist --ignore src/**/*.test.js --copy-files --no-copy-ignored",
+    "rollup": "rollup -c"
   },
   "author": "ananda dwi prayoga <prayogaananda04@gmail.com>",
   "license": "MIT",
@@ -19,12 +20,18 @@
     "@babel/cli": "^7.11.6",
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
+    "@rollup/plugin-babel": "^5.2.1",
+    "@rollup/plugin-commonjs": "^15.0.0",
+    "@rollup/plugin-json": "^4.1.0",
     "eslint": "^7.9.0",
     "husky": "^4.3.0",
     "jest-cli": "^26.4.2",
     "lint-staged": "^10.3.0",
+    "live-server": "^1.2.1",
     "prettier": "^2.1.1",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "rollup": "^2.27.1",
+    "rollup-plugin-commonjs": "^10.1.0"
   },
   "jest": {
     "coverageThreshold": {
@@ -48,5 +55,8 @@
       "npm run format",
       "git add"
     ]
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }
