@@ -7,9 +7,8 @@
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
     "format": "prettier ./src --write",
-    "test": "jest",
+    "test": "jest --coverage",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
     "prebuild": "rimraf dist",
     "build": "babel src --out-dir dist --ignore src/**/*.test.js --copy-files --no-copy-ignored",
     "rollup": "rollup -c"
