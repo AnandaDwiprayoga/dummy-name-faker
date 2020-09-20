@@ -15,5 +15,7 @@ jobs :
         run : |
           npm install
           npm test
+          npm codecov
         env : 
           CI: true
+          CODECOV_TOKEN: 13fae502-88d5-4d79-92f8-86676f7979ae
