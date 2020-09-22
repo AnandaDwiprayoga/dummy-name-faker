@@ -1,5 +1,5 @@
 {
-  "name": "open-source",
+  "name": "dummy-name-faker",
   "version": "1.0.0",
   "description": "learn contribute in open source",
   "main": "dist/index.js",
@@ -10,8 +10,9 @@
     "test": "jest --coverage",
     "test:watch": "jest --watch",
     "prebuild": "rimraf dist",
-    "build": "babel src --out-dir dist --ignore src/**/*.test.js --copy-files --no-copy-ignored",
-    "rollup": "rollup -c",
+    "build:node": "babel src --out-dir dist --ignore src/**/*.test.js --copy-files --no-copy-ignored",
+    "build:browser": "rollup -c",
+    "build": "npm run build:node && npm run build:browser",
     "codecov": "cat ./coverage/lcov.info | codecov"
   },
   "author": "ananda dwi prayoga <prayogaananda04@gmail.com>",
