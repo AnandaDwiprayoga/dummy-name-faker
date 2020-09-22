@@ -51,6 +51,12 @@ npm i dummy-name-faker
 
 ## How to contribute
 
+* Fork this repo
+* Anda clone this repo
+* Add your contribution
+* Don't forget to add your test
+* Push and create pull request
+
 ## Todo
 - [ ] Complete Readme
 - [x] Add license
