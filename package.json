@@ -1,6 +1,6 @@
 {
   "name": "dummy-name-faker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "learn contribute in open source",
   "main": "dist/index.js",
   "scripts": {
